@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parque Tecnológico Cartagena | Hub de Innovación & Web3</title>
+    <meta name="description" content="El ecosistema líder en el Caribe para startups, inversores y talento Web3. Conecta, crea y crece en el Parque Tecnológico de Cartagena." />
+    <meta name="keywords" content="Parque Tecnológico Cartagena, Innovación Web3 Cartagena, Startups Cartagena, Coworking Caribe, Blockchain Colombia" />
+    <meta name="author" content="Parque Tecnológico Cartagena" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cartagenatech.co/" />
+    <meta property="og:title" content="Parque Tecnológico Cartagena | El Futuro de la Innovación" />
+    <meta property="og:description" content="Únete al hub tecnológico más vibrante del Caribe. Infraestructura de punta, networking global y acceso a fondos de inversión." />
+    <meta property="og:image" content="https://picsum.photos/1200/630?grayscale" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Parque Tecnológico Cartagena" />
+    <meta property="twitter:description" content="Innovación y tecnología en el corazón del Caribe." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                500: '#0ea5e9', // Sky blue/Teal mix for coastal tech vibe
+                600: '#0284c7',
+                900: '#0c4a6e',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Google Analytics Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "recharts": "https://esm.sh/recharts@^3.5.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-brand-500 selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
