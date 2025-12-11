@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
+            className="relative w-full"
           >
              {/* Mock Dashboard Card */}
             <div className="bg-white rounded-2xl shadow-2xl shadow-brand-900/10 border border-slate-100 p-6 relative overflow-hidden">
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
                   </div>
                </div>
                
-               <div className="h-[200px] w-full">
+               <div className="h-[200px] w-full min-w-0">
                 <ResponsiveContainer width="100%" height="100%">
                   <AreaChart data={GROWTH_STATS}>
                     <defs>
