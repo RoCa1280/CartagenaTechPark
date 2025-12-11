@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![React](https://img.shields.io/badge/react-v19-61DAFB?logo=react)
+![React](https://img.shields.io/badge/react-v18-61DAFB?logo=react)
 ![TypeScript](https://img.shields.io/badge/typescript-v5-3178C6?logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-v3-38B2AC?logo=tailwind-css)
 
@@ -26,7 +26,7 @@ El diseño sigue principios minimalistas y modernos, utilizando una paleta de co
 
 ## 🛠️ Stack Tecnológico
 
-*   **Core:** React 19
+*   **Core:** React 18
 *   **Lenguaje:** TypeScript
 *   **Estilos:** Tailwind CSS (Configurado para diseño rápido y consistente)
 *   **Animaciones:** Framer Motion
