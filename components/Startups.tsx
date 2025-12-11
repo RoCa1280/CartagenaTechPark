@@ -5,21 +5,21 @@ import { motion } from 'framer-motion';
 
 const Startups: React.FC = () => {
   return (
-    <section id="projects" className="py-20 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-end mb-12">
+    <section id="projects" className="startups-section">
+      <div className="container">
+        <div className="startups-header">
           <div>
-            <h2 className="text-3xl font-extrabold text-slate-900">Ecosistema en Acción</h2>
-            <p className="mt-4 text-lg text-slate-600">
+            <h2 className="section-title" style={{ marginTop: 0 }}>Ecosistema en Acción</h2>
+            <p className="section-desc" style={{ marginLeft: 0, marginTop: '1rem', fontSize: '1.125rem' }}>
               Conoce algunas de las empresas que están construyendo el futuro desde aquí.
             </p>
           </div>
-          <a href="#" className="hidden md:flex items-center text-brand-600 font-semibold hover:text-brand-700">
-            Ver todo el portafolio <ExternalLink className="ml-2 h-4 w-4" />
+          <a href="#" className="link-arrow desktop-only">
+            Ver todo el portafolio <ExternalLink size={16} />
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="startups-grid">
           {PROJECTS.map((project, index) => (
             <motion.div
               key={project.id}
@@ -27,32 +27,32 @@ const Startups: React.FC = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col group"
+              className="startup-card"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="card-image-wrapper">
                 <img 
                   src={project.imageUrl} 
                   alt={project.name} 
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  className="card-image"
                 />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-700">
+                <div className="category-tag">
                   {project.category}
                 </div>
               </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{project.name}</h3>
-                <p className="text-slate-600 text-sm mb-6 flex-1">{project.description}</p>
-                <button className="text-brand-600 font-medium text-sm flex items-center group-hover:text-brand-500">
-                  Ver Detalles <span className="ml-1 opacity-0 group-hover:opacity-100 transform translate-x-[-5px] group-hover:translate-x-0 transition-all">→</span>
+              <div className="card-content">
+                <h3 className="startup-name">{project.name}</h3>
+                <p className="startup-desc">{project.description}</p>
+                <button className="btn-link">
+                  Ver Detalles <span className="arrow-anim">→</span>
                 </button>
               </div>
             </motion.div>
           ))}
         </div>
         
-        <div className="mt-8 text-center md:hidden">
-            <a href="#" className="inline-flex items-center text-brand-600 font-semibold hover:text-brand-700">
-                Ver todo el portafolio <ExternalLink className="ml-2 h-4 w-4" />
+        <div style={{ marginTop: '2rem', textAlign: 'center' }} className="mobile-only-link" >
+            <a href="#" className="link-arrow" style={{display: 'inline-flex'}}>
+                Ver todo el portafolio <ExternalLink size={16} />
             </a>
         </div>
       </div>

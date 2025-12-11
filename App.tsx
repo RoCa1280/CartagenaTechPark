@@ -11,10 +11,10 @@ import Footer from './components/Footer';
 const App: React.FC = () => {
   return (
     <HashRouter>
-      <div className="min-h-screen flex flex-col font-sans">
+      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', fontFamily: 'Inter, sans-serif' }}>
         <Navigation />
         
-        <main className="flex-grow">
+        <main style={{ flexGrow: 1 }}>
           <Hero />
           <Benefits />
           <Startups />
